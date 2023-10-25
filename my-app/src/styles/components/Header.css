@@ -1,0 +1,14 @@
+Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoKasa{
+    height: 70px;
+}
+
+Header nav ul{
+    display: flex;
+    justify-content: space-between;
+}
