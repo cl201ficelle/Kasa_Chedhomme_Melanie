@@ -3,12 +3,15 @@
 * {
   font-family: montserrat;
 }
-body{
+header, main{
   max-width: 1240px;
-  margin:  30px auto;
-  }
+ }
 
-body,
+body{
+  margin: 0
+} 
+
+html, body,
 #root {
 	height: 100%
 }
@@ -16,6 +19,7 @@ body,
 #root {
 	display: flex;
 	flex-direction: column;
+  ;
 }
 
 main {
@@ -23,4 +27,7 @@ main {
 	box-sizing: border-box;
 	justify-content: center;
 	flex-grow: 1;
+  margin: auto;
 }
+
+

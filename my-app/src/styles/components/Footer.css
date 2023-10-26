@@ -1,10 +1,16 @@
 footer{
     background-color: black;
     text-align: center;
-    width: 100% !important;
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
 }
 
 .text_footer{
     color: white;
     font-size: 24px;
 }
+
+

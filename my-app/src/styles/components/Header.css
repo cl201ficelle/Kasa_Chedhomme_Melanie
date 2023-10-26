@@ -21,4 +21,9 @@ Header nav ul{
     gap : 30px;
     list-style-type: none;
 }
+header{
+    max-width: 1240px;
+    width: 100%;
+    margin: 30px auto;
+}
 
