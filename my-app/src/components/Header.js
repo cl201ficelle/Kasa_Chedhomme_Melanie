@@ -1,4 +1,5 @@
 import "../styles/components/Header.css"
+import banner_image_about from '../Images/banner_image_about.png'
 import logoKasa from '../Images/logo.png'
 import { Link } from 'react-router-dom'
 import { NavLink } from "react-router-dom";
@@ -6,6 +7,7 @@ import { NavLink } from "react-router-dom";
 function Header() {
   return (
     <header>
+      <div className="logo_nav">
         <div className="logoKasa">
             <img src={logoKasa} alt="logo Kasa"/>
         </div>
@@ -27,6 +29,8 @@ function Header() {
       </NavLink>
     </ul>
     </nav>
+    </div>
+    
     </header>
   )
 }

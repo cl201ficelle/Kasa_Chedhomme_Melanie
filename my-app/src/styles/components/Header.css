@@ -1,6 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); */
-
-Header{
+Header .logo_nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,5 +20,5 @@ Header nav ul{
     justify-content: space-between;
     gap : 30px;
     list-style-type: none;
-    
 }
+

@@ -5,8 +5,8 @@ import Accueil from './pages/Accueil'
 import About from './pages/About'
 import Logements from './pages/Logements'
 import Header from './components/Header'
-import Error from './components/Error'
-import "../src/styles/index.css"
+import Error from './pages/Error'
+import "../src/styles/page/index.css"
 
 ReactDOM.render(
   <React.StrictMode>

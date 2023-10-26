@@ -1,0 +1,12 @@
+.error{
+    color : #FF6060;
+    text-align: center;
+}
+
+.error .number{
+    font-size: 288px;
+}
+
+.error .error_text{
+    font-size: 36px;
+}
