@@ -1,13 +1,14 @@
 import banner_image_about from '../Images/banner_image_about.png'
 import "../styles/page/About.css"
+import Banner from '../components/Banner.js'
 
 
 function About() {
     return (
       <main>
-        <div className="banner_image_about">
-            <img src={banner_image_about} alt="image voyage"/>
-        </div>
+        <Banner 
+        imgSrc={banner_image_about}
+        />
       </main>
     )
   }
