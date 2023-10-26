@@ -1,11 +1,12 @@
 footer{
     background-color: black;
     text-align: center;
-    height: 209px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap : 40px;
+    min-height: 209px;
+    max-height: 209px
  
 }
 
@@ -13,5 +14,6 @@ footer{
     color: white;
     font-size: 24px;
 }
+
 
 

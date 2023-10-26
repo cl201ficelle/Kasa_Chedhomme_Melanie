@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Error() {
     return (
-      <div className="error">
+      <main className="error">
         <div className="number">
             404
         </div>
@@ -12,8 +12,8 @@ function Error() {
         </div>
         <div className="retour">
         <Link to="/">Retourner sur la page d’accueil</Link>
-      </div>
-      </div>
+        </div>
+      </main>
     )
   }
   
