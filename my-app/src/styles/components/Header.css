@@ -1,3 +1,5 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); */
+
 Header{
     display: flex;
     justify-content: space-between;
@@ -8,7 +10,17 @@ Header{
     height: 70px;
 }
 
+nav a {
+    color : #FF6060;
+    text-decoration: none;
+    font-family: montserrat;
+    font-size: 24px;
+}
+
 Header nav ul{
     display: flex;
     justify-content: space-between;
+    gap : 30px;
+    list-style-type: none;
+    
 }
