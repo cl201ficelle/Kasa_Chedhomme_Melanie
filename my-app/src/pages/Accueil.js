@@ -3,6 +3,7 @@ import "../styles/page/Accueil.css"
 import Banner from '../components/Banner.js'
 
 
+
 function Accueil() {
   return (
     <main>
@@ -11,6 +12,7 @@ function Accueil() {
         />
         
     </main>
+    
   )
 }
 
