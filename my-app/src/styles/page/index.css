@@ -6,4 +6,21 @@
 body{
   max-width: 1240px;
   margin:  30px auto;
+  }
+
+body,
+#root {
+	height: 100%
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	width: 100%;
+	box-sizing: border-box;
+	justify-content: center;
+	flex-grow: 1;
 }

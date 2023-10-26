@@ -1,4 +1,4 @@
-.error{
+.error, .error a{
     color : #FF6060;
     text-align: center;
 }
@@ -9,4 +9,13 @@
 
 .error .error_text{
     font-size: 36px;
+}
+
+.retour a{
+    font-size: 18px;
+    
+}
+
+.retour{
+    padding-top: 80px;
 }
