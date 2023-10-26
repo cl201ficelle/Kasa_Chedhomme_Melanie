@@ -1,0 +1,19 @@
+footer{
+    background-color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap : 40px;
+    min-height: 209px;
+    max-height: 209px
+ 
+}
+
+.text_footer{
+    color: white;
+    font-size: 24px;
+}
+
+
+
