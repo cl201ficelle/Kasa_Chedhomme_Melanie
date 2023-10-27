@@ -12,7 +12,7 @@ const Collapsible =()=>{
     return(
         
         <div>
-        <button onClick={toggle} className='button_collapse' >toggle<i class={`fa-solid ${open ? "fa-chevron-down" : "fa-chevron-up"}`}></i></button>
+        <button onClick={toggle} className='button_collapse' >Toggle<i className={`fa-solid ${open ? "fa-chevron-down" : "fa-chevron-up"}`}></i></button>
         {open && (
           <div className="text_collapse">
             <p>toggle</p>
