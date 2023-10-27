@@ -1,0 +1,37 @@
+.logement_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 340px);
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    margin: 30px 0;
+    padding-top: 40px;   
+}
+
+
+.logement_img{
+    height: 340px;
+    width: 340px;
+    object-fit: cover;
+    border-radius: 10px;    
+}
+
+.image_title_container{
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.logement_title{
+    position: absolute;
+    bottom : 0;
+    left : 15px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.logement_card{
+    margin-bottom: 30px;
+}
