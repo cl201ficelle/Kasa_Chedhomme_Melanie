@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import "../styles/components/LogementsList.css";
+import React, { useEffect, useState } from "react"
+import "../styles/components/LogementsList.css"
 
 const Card = () => {
-  const [logements, setLogements] = useState([]); // Utilisation de useState avec setLogements pour mettre à jour le tableau logements
+  const [logements, getLogements] = useState([]) // utilisation de useState avec setLogements pour mettre à jour le tableau logements
 
   useEffect(() => {
     const GetLogementsList = async () => {
@@ -10,7 +10,7 @@ const Card = () => {
         const reponse = await fetch("/logements.json");
         if (reponse.ok) {
           const data = await reponse.json();
-          setLogements(data); // Mettre à jour le tableau logements avec les données récupérées
+          getLogements(data); // Mettre à jour le tableau logements avec les données récupérées
         } else {
           console.error('Erreur : ', reponse.status);
         }
