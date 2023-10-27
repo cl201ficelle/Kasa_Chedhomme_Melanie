@@ -1,7 +1,7 @@
 import banner_image_accueil from '../Images/banner_image_accueil.png'
 import "../styles/page/Accueil.css"
 import Banner from '../components/Banner.js'
-import LogementsList from '../components/LogementsList'
+import Card from '../components/Card'
 
 
 function Accueil() {
@@ -10,7 +10,7 @@ function Accueil() {
         <Banner 
         imgSrc={banner_image_accueil}
         />
-        <LogementsList />
+        <Card />
         
     </main>
     

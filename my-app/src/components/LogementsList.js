@@ -1,35 +1,37 @@
 import "../styles/components/LogementsList.css"
 
 
-// const reponse = await fetch("../assets/logements.json")
+
+
+// const reponse = await fetch("./logements.json")
 // const logementList = await reponse.json()
-const logementList = [
-    'monstera',
-    'ficus lyrata',
-    'pothos argenté',
-    'yucca',
-    'palmier'
-]
 
 
 
 
 
-function LogementsList() {
-    return (
-        <ul>
-            {logementList.map((logement) => (
-                <li>{logement}</li>
-            ))}
-        </ul>
+
+// function LogementsList() {
+//     return (fetch('/logements.json')
+// .then(function (response) {
+//     return response.json();
+// })
+// .then(function (data) {console.log(data)
+//     // Do something with data
+// })
+        
+            
+            
+        
+        
     //   <div className="logements_list">
         
     //         {logementList.map((logement) => (
     //             <li key={logement.id} id={logement.id} title={logement.title} cover={logement.cover}></li>
-    //         ))}
+//     //         ))}
         
-    //   </div>
-    )
-  }
+//     //   </div>
+//     )
+//   }
   
-  export default LogementsList
+//   export default LogementsList
