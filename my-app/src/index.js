@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Accueil from './pages/Accueil'
 import About from './pages/About'
@@ -9,9 +8,12 @@ import Error from './pages/Error'
 import Footer from './components/Footer.js'
 import "../src/styles/page/index.css"
 import LogementsList from './components/LogementsList'
+import { createRoot } from 'react-dom/client';
+const container = document.getElementById('root');
+const root = createRoot(container); // createRoot(container!) if you use TypeScript
 
 
-ReactDOM.render(
+root.render(
   <React.StrictMode>
     <Router>
       <Header />
@@ -24,5 +26,4 @@ ReactDOM.render(
       <Footer />
     </Router>
   </React.StrictMode>,
-  document.getElementById('root')
-)
+  )
