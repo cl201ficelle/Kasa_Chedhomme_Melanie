@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import "../styles/components/Collapse.css"
 
 
-const Collapsible =()=>{
+const Collapsible =(props)=>{
     const [open, setOpen] = useState(false);
     const toggle = () => {
     setOpen(!open);
@@ -12,10 +12,10 @@ const Collapsible =()=>{
     return(
         
         <div>
-        <button onClick={toggle} className='button_collapse' >Toggle<i className={`fa-solid ${open ? "fa-chevron-down" : "fa-chevron-up"}`}></i></button>
+        <button onClick={toggle} className='button_collapse' >{props.label}<i className={`fa-solid ${open ? "fa-chevron-down" : "fa-chevron-up"}`}></i></button>
         {open && (
           <div className="text_collapse">
-            <p>toggle</p>
+            <p>{props.description}</p>
           </div>
         )}
       </div>
