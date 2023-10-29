@@ -1,0 +1,6 @@
+.logements_img{
+    height: 1000px;
+    width: 340px;
+    object-fit: cover;
+    border-radius: 10px;    
+}

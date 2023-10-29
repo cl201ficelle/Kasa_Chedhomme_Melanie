@@ -9,6 +9,7 @@ import Footer from './components/Footer.js'
 import "../src/styles/page/index.css"
 import LogementsList from './components/LogementsList'
 import { createRoot } from 'react-dom/client';
+import Location from './pages/Logements'
 const container = document.getElementById('root');
 const root = createRoot(container); // createRoot(container!) if you use TypeScript
 
@@ -20,7 +21,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/About" element={<About />} />
-        <Route path="/Logements" element={<Logements />} />
+        <Route path="/Logements/:id" element={<Location />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />

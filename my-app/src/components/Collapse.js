@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from "react"
-// import "../styles/components/Collapse.css"
+
 
 
 const Collapsible =(props)=>{
