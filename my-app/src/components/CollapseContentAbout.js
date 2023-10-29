@@ -1,5 +1,5 @@
 import Collapsible from "./Collapse";
-
+import "../styles/components/Collapse.css"
 
 function CollapseContentAbout(){
     const contentAbout = [
@@ -25,7 +25,7 @@ function CollapseContentAbout(){
         },
       ];
       return (
-        <div >
+        <div>
         {contentAbout.map((contentAbout, index) => (
             < Collapsible key={index} label={contentAbout.label} description={contentAbout.description}/>
         ))}
