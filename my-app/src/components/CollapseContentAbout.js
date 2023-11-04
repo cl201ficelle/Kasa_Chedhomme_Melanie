@@ -25,7 +25,7 @@ function CollapseContentAbout(){
         },
       ];
       return (
-        <div>
+        <div className="collapse_about">
         {contentAbout.map((contentAbout, index) => (
             < Collapsible key={index} label={contentAbout.label} description={contentAbout.description}/>
         ))}

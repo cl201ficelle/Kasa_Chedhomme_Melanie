@@ -1,6 +1,36 @@
 .logements_img{
-    height: 1000px;
-    width: 340px;
+    height: 500px;
+    width: 100%;
     object-fit: cover;
-    border-radius: 10px;    
+    border-radius: 10px; 
+
+}
+
+.titles{
+    color: #FF6060
+}
+
+.titles .title{
+    font-size: 36px;
+
+}
+
+.titles .location{
+    font-size: 18px;
+}
+
+.title_and_host{
+    display: flex;
+    justify-content: space-between;
+}
+
+.host{
+    display: flex;
+    
+}
+
+
+.collapse_logement{
+    display: flex;
+    flex-direction: row;
 }

@@ -5,21 +5,28 @@
     height: 52px;
     border-radius: 5px;
     font-size: 24px;
-    width: 1023px;
+    box-sizing: content-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
 }
 
+.collapse_about .button_collapse, .collapse_about .text_collapse{
+    width: 983px;
+}
+.collapse_logement .button_collapse, .collapse_logement .text_collapse{
+    width: 542px;
+}
 .text_collapse{
     background-color: #F6F6F6;
     color: #FF6060;
     border-radius: 5px;
     font-size: 18px;
-    width: 985px;
+    box-sizing: content-box;
     padding: 0 20px;
 }
+
 
 
 .button_text_collapse{

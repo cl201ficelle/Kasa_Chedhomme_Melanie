@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react"
 import "../styles/page/Logement.css"
 import { useParams } from "react-router-dom";
 import Error from "./Error";
+import Collapsible from "../components/Collapse";
+
 
 
 const Location = () => {
@@ -29,29 +31,41 @@ const Location = () => {
   const logement = logements.find((item) => item.id === id)
 
   if (!logement) {
-    return <Error />;
-  }
+    return <Error />
+  } else
 
   return (
-    <div className="logement_list">
+   
       
-        
+          <main>        
           <div className="logement">
-                <div className="logementtest">
+                
                         <img src={logement.cover} alt={logement.name} className="logements_img"/> 
-                        <h2 className="title">{logement.title}</h2>
-                        <h3 className="location">{logement.location}</h3>
+                        <div className="title_and_host">
+                        <div className="titles">
+                          <h2 className="title">{logement.title}</h2>
+                          <h3 className="location">{logement.location}</h3>
+                        </div>
+                        
+                        <div className="host">
+                          <div className="host_name">{logement.host.name}</div>
+                          <div className="host_picture"><img src={logement.host.picture}/></div>
+                        </div>
+                        </div>
                         <div className="tag"></div>
-                        <div className="host">{logement.host.name}</div>
-                        <div className="host_picture"><img src={logement.host.picture}/></div>
-                        <div className="description">{logement.description}</div>
-                        <div className="equipements">{logement.equipments}</div>
+                        <div>
+            <div className="collapse_logement">
+            <div className="description">< Collapsible label="Description" description={logement.description}/></div>
+            <div className="equipement">< Collapsible label="Équipements" description={logement.equipments}/></div>
+            </div>
+        </div>
+                        
                         </div>
 
-                </div>
+                </main>
           
        
-          </div>
+         
   );
 };
 
