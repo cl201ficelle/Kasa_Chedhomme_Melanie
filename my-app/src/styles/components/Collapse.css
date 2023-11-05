@@ -29,9 +29,15 @@
 
 
 
-.button_text_collapse{
+.collapse_about .button_text_collapse{
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: 40px;
+}
+.collapse_logement .button_text_collapse{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
 }
