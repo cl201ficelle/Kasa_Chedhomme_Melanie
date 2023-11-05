@@ -1,0 +1,17 @@
+.logement_tags{
+    background-color: #FF6060;
+    border-radius: 10px;
+    width: 115px;
+    height: 25px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+   
+}
+
+.logement_list_tags{
+    display: flex;
+    flex-direction: row;
+    gap : 10px
+}

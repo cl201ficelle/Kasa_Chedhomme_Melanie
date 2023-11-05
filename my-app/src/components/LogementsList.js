@@ -3,7 +3,7 @@ import "../styles/components/LogementsList.css"
 import { Link } from "react-router-dom";
 
 const Card = () => {
-  const [logements, getLogements] = useState([]) // utilisation de useState avec setLogements pour mettre à jour le tableau logements
+  const [logements, setLogements] = useState([]) // utilisation de useState avec setLogements pour mettre à jour le tableau logements
 
   useEffect(() => {
     const GetLogementsList = async () => {
@@ -11,7 +11,7 @@ const Card = () => {
         const reponse = await fetch("/logements.json");
         if (reponse.ok) {
           const data = await reponse.json();
-          getLogements(data); // Mettre à jour le tableau logements avec les données récupérées
+          setLogements(data); // Mettre à jour le tableau logements avec les données récupérées
         } else {
           console.error('Erreur : ', reponse.status);
         }

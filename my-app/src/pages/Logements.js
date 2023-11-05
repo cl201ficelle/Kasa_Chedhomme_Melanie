@@ -3,6 +3,8 @@ import "../styles/page/Logement.css"
 import { useParams } from "react-router-dom";
 import Error from "./Error";
 import Collapsible from "../components/Collapse";
+import Tags from "../components/Tags";
+import "../styles/components/Tags.css"
 
 
 
@@ -52,7 +54,7 @@ const Location = () => {
                           <div className="host_picture"><img src={logement.host.picture}/></div>
                         </div>
                         </div>
-                        <div className="tag"></div>
+                        <div className="tag"><Tags /></div>
                         <div>
             <div className="collapse_logement">
             <div className="description">< Collapsible label="Description" description={logement.description}/></div>
