@@ -1,0 +1,14 @@
+.host_picture img{
+    border-radius: 50%;
+    width: 64px;
+}
+
+.logement_host{
+    display: flex;
+}
+
+.host_name{
+   color:#FF6060;
+   font-size: 18px;
+   font-weight: 500;
+}

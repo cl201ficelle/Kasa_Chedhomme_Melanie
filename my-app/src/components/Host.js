@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import "../styles/page/Logement.css"
+import "../styles/components/Host.css"
 import { useParams } from "react-router-dom";
 import Error from "../pages/Error";
 
