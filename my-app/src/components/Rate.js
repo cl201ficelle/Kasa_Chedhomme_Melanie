@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
 import Error from "../pages/Error";
-import "../styles/components/Tags.css"
+import "../styles/components/Rate.css"
+
 
 
 
@@ -32,13 +33,21 @@ const Rate = () => {
     return <Error />
   } else
   return (
+    
     <div className="rate">
-    
+  <ul>
+    <li className="fa-solid fa-star"></li>
+    <li className="fa-solid fa-star"></li>
+    <li className="fa-solid fa-star"></li>
+    <li className="fa-solid fa-star"></li>
+    <li className="fa-solid fa-star"></li> 
+  </ul>
+</div>
+        
+       
       
-        <h2 className="logement_tags">{logement.rating}</h2>
-      
     
-  </div>
+ 
   );
 };
 

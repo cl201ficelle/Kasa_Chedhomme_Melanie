@@ -1,0 +1,9 @@
+.rate{
+    
+    gap: 80px;
+}
+
+.rate .fa-star{
+    color : #FF6060;
+    font-size: 22px;
+}

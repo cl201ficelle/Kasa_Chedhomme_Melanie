@@ -38,3 +38,8 @@
    
 }
 
+.tags_and_rate{
+    display: flex;
+    justify-content: space-between;
+}
+
