@@ -7,7 +7,8 @@
     color: white;
     text-align: center;
     line-height: 25px;
-    padding: 0 10px 
+    padding: 0 10px;
+    font-weight: 500
 }
 
 .logement_list_tags{

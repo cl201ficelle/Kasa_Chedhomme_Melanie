@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 import Error from "./Error";
 import Collapsible from "../components/Collapse";
 import Tags from "../components/Tags";
-import "../styles/components/Tags.css"
 import Host from "../components/Host";
 import Carousel from "../components/Carousel";
 import TitleLogement from "../components/TitleLogement";
