@@ -6,6 +6,7 @@ import Collapsible from "../components/Collapse";
 import Tags from "../components/Tags";
 import "../styles/components/Tags.css"
 import Host from "../components/Host";
+import Carousel from "../components/Carousel";
 
 
 
@@ -43,7 +44,7 @@ const Location = () => {
           <main>        
           <div className="logement">
                 
-                        <img src={logement.cover} alt={logement.name} className="logements_img"/> 
+                        <Carousel/> 
                         <div className="title_and_host">
                         <div className="titles">
                           <h2 className="title">{logement.title}</h2>
