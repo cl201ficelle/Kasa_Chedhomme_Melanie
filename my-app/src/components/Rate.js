@@ -31,24 +31,24 @@ const Rate = () => {
   const logement = logements.find((item) => item.id === id)
   if (!logement) {
     return <Error />
-  } else
+  } else {
+    const stars = []
+    for (let i = 1; i <= 5; i++) {
+      const starClass = i <= logement.rating ? "fa-solid fa-star active" : "fa-solid fa-star inactive";
+      stars.push(<li key={i} className={starClass}></li>);
+    }
   return (
     
-    <div className="rate">
-  <ul>
-    <li className="fa-solid fa-star"></li>
-    <li className="fa-solid fa-star"></li>
-    <li className="fa-solid fa-star"></li>
-    <li className="fa-solid fa-star"></li>
-    <li className="fa-solid fa-star"></li> 
-  </ul>
-</div>
+   <div className="rate">
+        <ul>{stars}</ul>
+      </div>
+
         
        
       
     
  
-  );
+  )};
 };
 
 export default Rate;

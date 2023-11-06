@@ -1,9 +1,9 @@
-.rate{
-    
-    gap: 80px;
+.rate .fa-solid.fa-star.active {
+    color : #FF6060;
+    font-size: 22px;
 }
 
-.rate .fa-star{
-    color : #FF6060;
+.rate .fa-solid.fa-star.inactive{
+    color : gray;
     font-size: 22px;
 }
