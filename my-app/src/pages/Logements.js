@@ -7,6 +7,7 @@ import Tags from "../components/Tags";
 import "../styles/components/Tags.css"
 import Host from "../components/Host";
 import Carousel from "../components/Carousel";
+import TitleLogement from "../components/TitleLogement";
 
 
 
@@ -46,14 +47,11 @@ const Location = () => {
                 
                         <Carousel/> 
                         <div className="title_and_host">
-                        <div className="titles">
-                          <h2 className="title">{logement.title}</h2>
-                          <h3 className="location">{logement.location}</h3>
-                        </div>
+                        <TitleLogement/>
                         
                         <Host />
                         </div>
-                        <div className="tag"><Tags /></div>
+                        <Tags />
                         <div>
             <div className="collapse_logement">
             <div className="description">< Collapsible label="Description" description={logement.description}/></div>

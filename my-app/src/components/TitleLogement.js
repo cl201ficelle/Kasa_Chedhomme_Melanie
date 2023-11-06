@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react"
 import "../styles/page/Logement.css"
 import { useParams } from "react-router-dom";
 import Error from "../pages/Error";
-import "../styles/components/Carousel.css"
 
 
 
-const Carousel = () => {
+
+const TitleLogement = () => {
   const [logements, setLogements] = useState([]) // utilisation de useState avec setLogements pour mettre à jour le tableau logements
   
   useEffect(() => {
@@ -32,15 +32,12 @@ const Carousel = () => {
     return <Error />
   } else
   return (
-    <div className="logement_carousel">
-    {logement.pictures.map((pictures, index) => (
-      <div key={index} className="logement_imgs_carousel">
-        <img src={pictures} alt="photo logement" className="logement_img_carousel"/>
-      </div>
-    ))}
-  </div>
-  );
-};
+    <div className="titles">
+                          <h2 className="title">{logement.title}</h2>
+                          <h3 className="location">{logement.location}</h3>
+                        </div>
+    )}
+ 
 
-export default Carousel;
+export default TitleLogement;
 
