@@ -5,6 +5,7 @@ import Error from "./Error";
 import Collapsible from "../components/Collapse";
 import Tags from "../components/Tags";
 import "../styles/components/Tags.css"
+import Host from "../components/Host";
 
 
 
@@ -49,10 +50,7 @@ const Location = () => {
                           <h3 className="location">{logement.location}</h3>
                         </div>
                         
-                        <div className="host">
-                          <div className="host_name">{logement.host.name}</div>
-                          <div className="host_picture"><img src={logement.host.picture}/></div>
-                        </div>
+                        <Host />
                         </div>
                         <div className="tag"><Tags /></div>
                         <div>
