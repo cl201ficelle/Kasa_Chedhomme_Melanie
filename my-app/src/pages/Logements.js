@@ -37,7 +37,7 @@ const Location = () => {
 
   if (!logement) {
     return <Error />
-  } else
+  } else {
 
   return (
    
@@ -68,6 +68,6 @@ const Location = () => {
        
          
   );
-};
+};}
 
 export default Location;
