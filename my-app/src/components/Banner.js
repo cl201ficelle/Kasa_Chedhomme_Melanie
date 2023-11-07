@@ -1,6 +1,6 @@
 function Banner(props) {
   return (
-            <div className="banner_image_accueil">
+            <div>
             <img src={props.imgSrc} alt="Photo paysage"/>
             </div>
           )

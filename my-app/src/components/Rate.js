@@ -30,7 +30,7 @@ const Rate = () => {
   const { id } = useParams();
   const logement = logements.find((item) => item.id === id)
   if (!logement) {
-    return <Error />
+    return console.log("Erreur")
   } else {
     const stars = []
     for (let i = 1; i <= 5; i++) {

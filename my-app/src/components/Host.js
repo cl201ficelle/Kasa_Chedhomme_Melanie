@@ -29,7 +29,7 @@ const Host = () => {
   const { id } = useParams();
   const logement = logements.find((item) => item.id === id)
   if (!logement) {
-    return <Error />
+    return console.log("Erreur")
   } else
   return (
     <div className="logement_host"> 
