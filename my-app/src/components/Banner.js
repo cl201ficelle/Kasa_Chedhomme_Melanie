@@ -1,3 +1,4 @@
+import "../styles/components/Banner.css"
 function Banner(props) {
   return (
             <div>

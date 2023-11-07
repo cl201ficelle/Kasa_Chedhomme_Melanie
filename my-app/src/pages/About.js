@@ -7,9 +7,10 @@ import CollapseContentAbout from '../components/CollapseContentAbout'
 function About() {
     return (
       <main>
+        <div className="banner_image_about">
         <Banner 
         imgSrc={banner_image_about}
-        />
+        /></div>
         <CollapseContentAbout />
       </main>
     )
