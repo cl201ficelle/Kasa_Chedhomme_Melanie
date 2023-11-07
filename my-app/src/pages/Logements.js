@@ -57,7 +57,12 @@ const Location = () => {
                         <div>
               <div className="collapse_logement">
               <div className="description">< Collapsible label="Description" description={logement.description}/></div>
-              <div className="equipement">< Collapsible label="Équipements" description={logement.equipments}/></div>
+              <Collapsible
+          label="Équipements"
+          description={logement.equipments.map((e, index) => (
+            <span key={index}>{e}<br/></span>
+          ))}
+          />
               </div>
             </div>
                         
