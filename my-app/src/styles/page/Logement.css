@@ -30,13 +30,7 @@
 }
 
 
-.collapse_logement{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 15px 0;
-   
-}
+
 
 .tags_and_rate{
     display: flex;
@@ -44,3 +38,19 @@
 }
 
 
+@media (max-width: 400px) {
+    .box_shadow, .logement_img{
+       width: 335px; 
+       height: 255px;
+    }
+    .logement_list{
+        background-color: white;
+    }
+    .titles .title{
+        font-size: 18px;
+    }
+    .titles .location{
+        font-size: 14px;
+    }
+    
+}

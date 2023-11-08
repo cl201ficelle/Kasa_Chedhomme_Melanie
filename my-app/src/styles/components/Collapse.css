@@ -12,12 +12,18 @@
     padding: 0 20px;
 }
 
+.collapse_about{
+    margin: 0 88px;
+}
+
+.collapse_logement .description, .collapse_logement .equipements{
+    width: 50%;
+}
+
 .collapse_about .button_collapse, .collapse_about .text_collapse{
-    width: 983px;
+    width: 100%;
 }
-.collapse_logement .button_collapse, .collapse_logement .text_collapse{
-    width: 542px;
-}
+
 .text_collapse{
     background-color: #F6F6F6;
     color: #FF6060;
@@ -28,6 +34,14 @@
     font-weight: 400;
 }
 
+.collapse_logement{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0;
+    gap: 50px;
+   
+}
 
 
 .collapse_about .button_text_collapse{
@@ -38,7 +52,20 @@
 }
 .collapse_logement .button_text_collapse{
     display: flex;
-    align-items: center;
     flex-direction: column;
+    
+}
+
+
+@media (max-width: 591px) {
+    .collapse_about .button_collapse, .collapse_about .text_collapse{
+       width: 335px;   
+    }
+    .collapse_logement {
+        flex-direction: column !important;
+    }
+    .collapse_logement .description, .collapse_logement .equipements{
+        width: 100%;
+    }
     
 }
