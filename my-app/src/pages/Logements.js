@@ -46,13 +46,18 @@ const Location = () => {
             <div className="logement">
                 
                         <Carousel/> 
-                        <div className="title_and_host">
+                        <div className="titles_logement_host_rate">
+                        <div className="titles_logement">
                         <TitleLogement/>
-                        <Host />
+                        
                         </div>
-                        <div className="tags_and_rate">
-                        <Tags />
+                        <div className="host_and_rate">
+                        
+                        <Host />
                         <Rate/>
+                        </div></div>
+                        <div className="tags">
+                         <Tags /> 
                         </div>
                         <div>
               <div className="collapse_logement">

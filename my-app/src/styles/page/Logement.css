@@ -1,56 +1,36 @@
-.logements_img{
-    height: 500px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px; 
-
-}
-
 .titles{
     color: #FF6060
 }
 
 .titles .title{
     font-size: 36px;
-
 }
 
 .titles .location{
     font-size: 18px;
 }
 
-.title_and_host{
+.titles_logement_host_rate{
     display: flex;
     justify-content: space-between;
 }
 
-.host{
+.host_and_rate{
     display: flex;
-    
-}
-
-
-
-
-.tags_and_rate{
-    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-}
+    margin-top: 20px;
 
+}
 
 @media (max-width: 400px) {
-    .box_shadow, .logement_img{
-       width: 335px; 
-       height: 255px;
+    .titles_logement_host_rate{
+     flex-direction: column;
     }
-    .logement_list{
-        background-color: white;
+    .host_and_rate{
+        flex-direction: row-reverse;
+       }
+    .rate ul{
+        padding: 0px;
     }
-    .titles .title{
-        font-size: 18px;
-    }
-    .titles .location{
-        font-size: 14px;
-    }
-    
 }

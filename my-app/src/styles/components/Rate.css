@@ -7,3 +7,11 @@
     color : gray;
     font-size: 22px;
 }
+
+@media (max-width: 400px) {
+    .rate .fa-solid.fa-star.inactive, .rate .fa-solid.fa-star.active{
+       font-size: 16px;
+    }
+    
+    
+}

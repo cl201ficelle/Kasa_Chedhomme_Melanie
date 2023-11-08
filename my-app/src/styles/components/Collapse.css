@@ -56,6 +56,21 @@
     
 }
 
+.arrow {
+    font-size: 24px;
+    display: inline-block;
+    user-select: none;
+    animation: rotate 0.5s;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
+  }
 
 @media (max-width: 591px) {
     .collapse_about .button_collapse, .collapse_about .text_collapse{
@@ -66,6 +81,5 @@
     }
     .collapse_logement .description, .collapse_logement .equipements{
         width: 100%;
-    }
-    
+    }   
 }

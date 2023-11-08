@@ -5,8 +5,9 @@
     align-items: flex-start;
     background-color: #F6F6F6;
     border-radius: 25px;
-    margin: 30px 0;
-    padding-top: 40px;   
+    margin: 50px 0;
+    padding-top: 50px; 
+    padding-bottom: 20px;  
 }
 
 
@@ -46,3 +47,20 @@
     border-radius: 10px;
 
   }
+
+  @media (max-width: 400px) {
+    .box_shadow, .logement_img{
+       width: 335px; 
+       height: 255px;
+    }
+    .logement_list{
+        background-color: white;
+    }
+    .titles .title{
+        font-size: 18px;
+    }
+    .titles .location{
+        font-size: 14px;
+    }
+    
+}
