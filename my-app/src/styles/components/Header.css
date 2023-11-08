@@ -4,7 +4,7 @@ Header .logo_nav{
     align-items: center;
 }
 
-.logoKasa{
+.logoKasa img{
     height: 70px;
 }
 
@@ -30,3 +30,10 @@ header{
 }
 
 
+@media (max-width: 376px) {
+    .logoKasa img{
+        height: 46px;
+    }
+
+
+}
