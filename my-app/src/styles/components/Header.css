@@ -11,7 +11,6 @@ Header .logo_nav{
 nav a {
     color : #FF6060;
     text-decoration: none;
-    font-family: montserrat;
     font-size: 24px;
 }
 
@@ -33,6 +32,9 @@ header{
 @media (max-width: 376px) {
     .logoKasa img{
         height: 46px;
+    }
+    nav a {
+        font-size: 12px;
     }
 
 
