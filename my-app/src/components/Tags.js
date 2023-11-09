@@ -29,7 +29,7 @@ const Tags = () => {
   const { id } = useParams();
   const logement = logements.find((item) => item.id === id)
   if (!logement) {
-    return <Error />
+    return null
   } else
   return (
     <div className="logement_list_tags">

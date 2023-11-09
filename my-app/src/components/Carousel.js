@@ -29,7 +29,7 @@ const Carousel = () => {
   const { id } = useParams();
   const logement = logements.find((item) => item.id === id)
   if (!logement) {
-    return console.log("Erreur")
+    return null
   } else
   return (
     <div className="logement_carousel">

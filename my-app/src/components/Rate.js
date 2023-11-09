@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
-import Error from "../pages/Error";
 import "../styles/components/Rate.css"
 
 
@@ -30,7 +29,7 @@ const Rate = () => {
   const { id } = useParams();
   const logement = logements.find((item) => item.id === id)
   if (!logement) {
-    return console.log("Erreur")
+    return null
   } else {
     const stars = []
     for (let i = 1; i <= 5; i++) {

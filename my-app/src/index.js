@@ -7,7 +7,6 @@ import Header from './components/Header'
 import Error from './pages/Error'
 import Footer from './components/Footer.js'
 import "../src/styles/page/index.css"
-import LogementsList from './components/LogementsList'
 import { createRoot } from 'react-dom/client';
 import Location from './pages/Logements'
 

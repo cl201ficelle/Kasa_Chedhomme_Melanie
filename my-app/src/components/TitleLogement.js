@@ -29,7 +29,7 @@ const TitleLogement = () => {
   const { id } = useParams();
   const logement = logements.find((item) => item.id === id)
   if (!logement) {
-    return <Error />
+    return null
   } else
   return (
     <div className="titles">
