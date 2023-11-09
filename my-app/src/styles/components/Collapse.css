@@ -72,14 +72,12 @@
     user-select: none;
     animation: rotate 0.5s;
   }
+  #rotateIcon {
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+  }
   
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(180deg);
-    }
+  .rotated {
+    transform: rotate(-180deg); /* Rotate the icon 180 degrees */
   }
 
 @media (max-width: 591px) {
