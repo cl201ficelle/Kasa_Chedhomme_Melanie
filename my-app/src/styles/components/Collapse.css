@@ -5,7 +5,6 @@
     height: 52px;
     border-radius: 5px;
     font-size: 24px;
-    box-sizing: content-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,18 +19,8 @@
     width: 50%;
 }
 
-.collapse_about .button_collapse, .collapse_about .text_collapse{
+.collapse_about .button_collapse{
     width: 100%;
-}
-
-.text_collapse{
-    background-color: #F6F6F6;
-    color: #FF6060;
-    border-radius: 5px;
-    font-size: 18px;
-    box-sizing: content-box;
-    padding: 0 20px;
-    font-weight: 400;
 }
 
 .collapse_logement{
@@ -54,6 +43,27 @@
     display: flex;
     flex-direction: column;
     
+}
+
+.collapse_content {
+    background-color: #F6F6F6;
+    color: #FF6060;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px;
+    box-sizing: content-box;
+    
+}
+    
+.content-parent {
+    height: 0px;
+    overflow: hidden;
+    transition: height ease 0.9s;
+}
+    
+.content-show {
+    height: 200px;
 }
 
 .arrow {
