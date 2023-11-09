@@ -47,6 +47,7 @@ const Carousel = () => {
     <div className="logement_carousel">
       <div onClick={goToPrevious}><i className="fa-solid fa-chevron-left"></i></div>
       <div onClick={goToNext}><i className="fa-solid fa-chevron-right"></i></div>
+      <div className="counter">1/1</div>
       {logement.pictures.map((picture, index) => (
         <div key={index} className={`logement_imgs_carousel ${index === currentIndex ? 'active' : 'hidden'}`}>
           <img src={picture} alt={`photo logement ${index}`} className="logement_img_carousel"/>

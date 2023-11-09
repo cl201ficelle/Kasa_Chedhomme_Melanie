@@ -28,3 +28,10 @@
   .logement_imgs_carousel.active {
     display: block;
   }
+
+  .counter{
+    position : absolute;
+    color: white;
+    top : 80%;
+    left : 600px
+  }
