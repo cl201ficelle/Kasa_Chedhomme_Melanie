@@ -10,27 +10,26 @@
     font-size: 18px;
 }
 
-.titles_logement_host_rate{
-    display: flex;
+.logement_info{
+    display : flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
-.host_and_rate{
+.host_rating{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 20px;
-
 }
 
+
 @media (max-width: 400px) {
-    .titles_logement_host_rate{
-     flex-direction: column;
+    .logement_info{
+        flex-direction: column;
     }
-    .host_and_rate{
+    .host_rating{
         flex-direction: row-reverse;
-       }
-    .rate ul{
-        padding: 0px;
     }
+    
 }

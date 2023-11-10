@@ -1,9 +1,4 @@
-
 import "../styles/page/Logement.css"
-
-
-
-
 
 const TitleLogement = (props) => {
   const title = props.title
@@ -16,6 +11,5 @@ const TitleLogement = (props) => {
                         </div>
     )}
  
-
 export default TitleLogement;
 

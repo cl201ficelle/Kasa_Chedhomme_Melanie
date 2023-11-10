@@ -27,20 +27,25 @@ const Location = () => {
             <div className="logement">
                 
                         <Carousel pictures={logement.pictures}/> 
-                        <div className="titles_logement_host_rate">
-                        <div className="titles_logement">
-                        <TitleLogement title={logement.title}/>
-                        <LocationLogement location={logement.location}/>
-                        
-                        </div>
-                        <div className="host_and_rate">
-                        
+                        <div className="logement_info">
+                        <div className="titles_location_tags">
+                           <div className="titles_location">
+                          <TitleLogement title={logement.title}/>
+                          <LocationLogement location={logement.location}/>
+                          </div>
+                          <div className="tags">
+                          <Tags tags={logement.tags}/> 
+                          </div></div>
+                        <div className="host_rating">
+                        <div className="host">
                         <Host host={logement.host}/>
-                        <Rate rating={logement.rating}/>
-                        </div></div>
-                        <div className="tags">
-                         <Tags tags={logement.tags}/> 
                         </div>
+                        <div className="rate">
+                        <Rate rating={logement.rating}/>
+                        </div>
+                        </div>
+                        </div>
+                        
                         <div>
               <div className="collapse_logement">
               <div className="description">< Collapsible label="Description" description={logement.description}/></div>
