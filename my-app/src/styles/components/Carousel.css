@@ -5,20 +5,25 @@
     border-radius: 10px;
 }
 
+.logement_carousel {
+    position: relative;
+  }
+  
+
 .logement_carousel .fa-chevron-left, .fa-chevron-right{
     color : white;
     position : absolute;
-    top : 45%;
+    top : 40%;
     font-size: 90px;
     z-index: 1;
     cursor: pointer;
 }
 
 .logement_carousel .fa-chevron-left{
-   left : 80px
+   left : 5%
 }
 .logement_carousel .fa-chevron-right{
-    right : 80px
+    right : 5%
  }
 
  .logement_imgs_carousel {
@@ -32,6 +37,7 @@
   .counter{
     position : absolute;
     color: white;
-    top : 80%;
-    left : 600px
+    top : 90%;
+    left : 50%;
+    right : 50%;
   }
