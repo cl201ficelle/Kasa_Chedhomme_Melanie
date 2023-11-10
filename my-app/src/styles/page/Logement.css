@@ -24,12 +24,15 @@
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .logement_info{
         flex-direction: column;
     }
     .host_rating{
         flex-direction: row-reverse;
+    }
+    .rate ul{
+        padding: 0;
     }
     
 }
