@@ -5,7 +5,7 @@
 
 /* media queries */
 
-@media (max-width: 376px) {
+@media (max-width: 550px) {
     .banner_image_accueil img{
         display: none;
     }
@@ -14,7 +14,7 @@
 }
 
 
-@media (min-width: 376px) {
+@media (min-width: 550px) {
     .banner_image_accueil_mobile img{
         display: none;
     }

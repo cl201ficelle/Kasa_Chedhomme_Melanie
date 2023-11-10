@@ -3,7 +3,7 @@
 * {
   font-family: montserrat;
 }
-header, main{
+main{
   max-width: 1240px;
  }
 
@@ -23,10 +23,19 @@ html, body,
 }
 
 main {
-	width: 100%;
 	justify-content: center;
 	flex-grow: 1;
-  margin: auto;
+  	margin: auto;
 }
 
+@media (max-width: 1280px) {
+    body{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+    footer{
+		width : 100vw;
+	margin-left : calc(-1 * ((100vw - 100%) / 2));
+	}    
+}
 

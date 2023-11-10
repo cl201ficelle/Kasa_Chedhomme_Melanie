@@ -11,10 +11,6 @@
     padding: 0 20px;
 }
 
-.collapse_about{
-    margin: 0 88px;
-}
-
 .collapse_logement .description, .collapse_logement .equipements{
     width: 50%;
 }
@@ -35,7 +31,7 @@
 
 .collapse_about .button_text_collapse{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: column;
     margin: 40px;
 }
@@ -80,14 +76,16 @@
     transform: rotate(-180deg); /* Rotate the icon 180 degrees */
   }
 
-@media (max-width: 591px) {
-    .collapse_about .button_collapse, .collapse_about .text_collapse{
-       width: 335px;   
-    }
+@media (max-width: 550px) {
+    
     .collapse_logement {
         flex-direction: column !important;
     }
     .collapse_logement .description, .collapse_logement .equipements{
         width: 100%;
-    }   
+    }
+    .collapse_about .button_text_collapse{
+        margin: 40px 0;
+    }
+
 }

@@ -28,7 +28,7 @@ header{
 }
 
 
-@media (max-width: 376px) {
+@media (max-width: 550px) {
     .logoKasa img{
         height: 40px !important;
     }
@@ -37,11 +37,15 @@ header{
     }
 }
 
-@media (max-width: 488px) {
-    .logoKasa img{
-        height: 46px;
-    }
+@media (max-width: 550px) {
+    
     nav a {
         font-size: 18px;
+    }
+    nav a {
+        color : #FF6060;
+        text-decoration: none;
+        font-size: 12px;
+        text-transform : uppercase;
     }
 }
