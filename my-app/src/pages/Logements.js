@@ -8,33 +8,14 @@ import Host from "../components/Host";
 import Carousel from "../components/Carousel";
 import TitleLogement from "../components/TitleLogement";
 import Rate from "../components/Rate";
+import logements from "../assets/logements.json"
+import LocationLogement from "../components/Location";
 
 
 
 const Location = () => {
-  const [logements, getLogements] = useState([]) // utilisation de useState avec setLogements pour mettre à jour le tableau logements
-  
-  useEffect(() => {
-    const GetLogementsList = async () => {
-      try {
-        const reponse = await fetch("/logements.json");
-        if (reponse.ok) {
-          const data = await reponse.json();
-          getLogements(data); // Mettre à jour le tableau logements avec les données récupérées
-        } else {
-          console.error('Erreur : ', reponse.status);
-        }
-      } catch (error) {
-        console.log("Erreur : ", error);
-      }
-    };
-
-    GetLogementsList();
-  }, []);
-
-  const { id } = useParams();
+   const { id } = useParams();
   const logement = logements.find((item) => item.id === id)
-
   if (!logement) {
     return <Error />
   } else {
@@ -45,19 +26,20 @@ const Location = () => {
           <main>        
             <div className="logement">
                 
-                        <Carousel/> 
+                        <Carousel pictures={logement.pictures}/> 
                         <div className="titles_logement_host_rate">
                         <div className="titles_logement">
-                        <TitleLogement/>
+                        <TitleLogement title={logement.title}/>
+                        <LocationLogement location={logement.location}/>
                         
                         </div>
                         <div className="host_and_rate">
                         
-                        <Host />
-                        <Rate/>
+                        <Host host={logement.host}/>
+                        <Rate rating={logement.rating}/>
                         </div></div>
                         <div className="tags">
-                         <Tags /> 
+                         <Tags tags={logement.tags}/> 
                         </div>
                         <div>
               <div className="collapse_logement">

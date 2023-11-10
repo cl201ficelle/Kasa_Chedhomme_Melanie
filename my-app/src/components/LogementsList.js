@@ -1,32 +1,12 @@
-import React, { useEffect, useState } from "react"
 import "../styles/components/LogementsList.css"
 import { Link } from "react-router-dom";
 
-const Card = () => {
-  const [logements, setLogements] = useState([]) // utilisation de useState avec setLogements pour mettre à jour le tableau logements
+const Card = (props) => {
 
-  useEffect(() => {
-    const GetLogementsList = async () => {
-      try {
-        const reponse = await fetch("/logements.json");
-        if (reponse.ok) {
-          const data = await reponse.json();
-          setLogements(data); // Mettre à jour le tableau logements avec les données récupérées
-        } else {
-          console.error('Erreur : ', reponse.status);
-        }
-      } catch (error) {
-        console.log("Erreur : ", error);
-      }
-    };
-
-    GetLogementsList();
-  }, []);
-
-  return (
+    return (
     <div className="logement_list">
       
-        {logements.map((logement, index) => (
+        {props.logements.map((logement, index) => (
           <div key={index} className="logement_card">
                <Link to={`/Logements/${logement.id}`}> <div className="image_title_container">
                         <div className="box_shadow"></div>
