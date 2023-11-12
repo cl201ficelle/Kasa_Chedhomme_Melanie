@@ -10,7 +10,6 @@
     padding-bottom: 20px;  
 }
 
-
 .logement_img{
     height: 340px;
     width: 340px;
@@ -20,8 +19,7 @@
 
 .image_title_container{
     position: relative;
-    cursor: pointer;
-    
+    cursor: pointer;   
 }
 
 .logement_title{
@@ -47,21 +45,24 @@
     border-radius: 10px;
   }
 
-  @media (max-width: 600px) {
+
+  @media (max-width: 800px) {
     .box_shadow, .logement_img{
        width: 335px; 
-       height: 255px;
+       height: 300px;
     }
     .logement_list{
         background-color: white;
         padding-top: 0; 
-    padding-bottom: 0;
+        padding-bottom: 0;
+    } 
+}
+
+  @media (max-width: 400px) {
+    .box_shadow, .logement_img{
+       height: 255px;
     }
-    .titles .title{
-        font-size: 18px;
+    .logement_title{
+       font-size: 16px;   
     }
-    .titles .location{
-        font-size: 14px;
-    }
-    
 }

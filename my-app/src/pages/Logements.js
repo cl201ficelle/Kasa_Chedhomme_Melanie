@@ -33,19 +33,13 @@ const Location = () => {
                           <TitleLogement title={logement.title}/>
                           <LocationLogement location={logement.location}/>
                           </div>
-                          <div className="tags">
                           <Tags tags={logement.tags}/> 
-                          </div></div>
+                          </div>
                         <div className="host_rating">
-                        <div className="host">
                         <Host host={logement.host}/>
-                        </div>
-                        <div className="rate">
                         <Rate rating={logement.rating}/>
                         </div>
                         </div>
-                        </div>
-                        
                         <div>
               <div className="collapse_logement">
               <div className="description">< Collapsible label="Description" description={logement.description}/></div>

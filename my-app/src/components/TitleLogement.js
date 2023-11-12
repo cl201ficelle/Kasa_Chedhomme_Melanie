@@ -1,4 +1,4 @@
-import "../styles/page/Logement.css"
+import "../styles/components/Title.css"
 
 const TitleLogement = (props) => {
   const title = props.title

@@ -19,3 +19,16 @@
 .retour{
     padding: 100px 0;
 }
+
+@media (max-width: 550px) {
+    .error .number{
+        font-size: 96px;
+    }
+    .error .error_text{
+        font-size: 18px;
+    }
+    .retour a{
+        font-size: 14px;     
+    }
+    
+}

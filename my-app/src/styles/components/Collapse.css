@@ -25,20 +25,17 @@
     justify-content: space-between;
     margin: 15px 0;
     gap: 50px;
-   
 }
 
 
 .collapse_about .button_text_collapse{
     display: flex;
-    /* align-items: center; */
     flex-direction: column;
     margin: 40px;
 }
 .collapse_logement .button_text_collapse{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;  
 }
 
 .collapse_content {
@@ -48,8 +45,7 @@
     font-size: 18px;
     font-weight: 400;
     padding: 20px;
-    box-sizing: content-box;
-    
+    box-sizing: content-box;  
 }
     
 .content-parent {
@@ -69,23 +65,58 @@
     animation: rotate 0.5s;
   }
   #rotateIcon {
-    transition: transform 0.3s ease; /* Add a smooth transition effect */
+    transition: transform 0.3s ease; 
   }
   
   .rotated {
-    transform: rotate(-180deg); /* Rotate the icon 180 degrees */
+    transform: rotate(-180deg); 
   }
 
-@media (max-width: 550px) {
+
+  @media (max-width: 800px) {
+
+   
+    .collapse_about .button_text_collapse{
+        margin: 30px 30px;
+    }
+    .button_collapse{
+        font-size: 18px;
+        height: 50px;
+    }
+    .collapse_content {
+        font-size: 16px;
+        padding: 15px;
+    }
+    .collapse_logement{
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 600px) {
     
     .collapse_logement {
         flex-direction: column !important;
-    }
+    } 
     .collapse_logement .description, .collapse_logement .equipements{
         width: 100%;
     }
+}
+
+@media (max-width: 400px) {
     .collapse_about .button_text_collapse{
-        margin: 40px 0;
+        margin: 20px 0;
+    }
+    .button_collapse{
+        font-size: 13px;
+        height: 30px;
+    }
+    .collapse_content {
+        font-size: 12px;
+        padding: 15px;
+    }
+    .collapse_logement{
+        gap: 20px;
     }
 
 }

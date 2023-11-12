@@ -1,19 +1,12 @@
-.titles{
-    color: #FF6060
-}
 
-.titles .title{
-    font-size: 36px;
-}
 
-.titles .location{
-    font-size: 18px;
-}
+
 
 .logement_info{
     display : flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 20px
 }
 
 .host_rating{
@@ -21,18 +14,19 @@
     flex-direction: column;
     justify-content: space-between;
     margin-top: 20px;
+    align-items: flex-end;
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
     .logement_info{
         flex-direction: column;
-    }
+        gap : 0
+        }
     .host_rating{
         flex-direction: row-reverse;
-    }
-    .rate ul{
-        padding: 0;
+        align-items: center;
+        margin-top: 0;
     }
     
 }

@@ -28,24 +28,24 @@ header{
 }
 
 
-@media (max-width: 550px) {
+@media (max-width: 800px) {
+    .logoKasa img{
+        height: 50px !important;
+    }
+    nav a {
+        color : #FF6060;
+        font-size: 16px;
+}
+}
+
+@media (max-width: 400px) {
     .logoKasa img{
         height: 40px !important;
     }
     nav a {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 550px) {
-    
-    nav a {
-        font-size: 18px;
-    }
-    nav a {
         color : #FF6060;
-        text-decoration: none;
         font-size: 12px;
         text-transform : uppercase;
     }
 }
+

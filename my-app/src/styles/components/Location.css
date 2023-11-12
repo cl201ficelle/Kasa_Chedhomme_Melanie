@@ -1,0 +1,18 @@
+.titles .location{
+    color: #FF6060;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+    .titles .location{
+        font-size: 16px;
+    }  
+}
+
+@media (max-width: 400px) {
+    .titles .location{
+        font-size: 14px;
+    }    
+}

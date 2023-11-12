@@ -1,9 +1,5 @@
 import "../styles/components/Rate.css"
 
-
-
-
-
 const Rate = (props) => {
   const rating = props.rating
   if (!rating) {
@@ -14,17 +10,10 @@ const Rate = (props) => {
       const starClass = i <= props.rating ? "fa-solid fa-star active" : "fa-solid fa-star inactive";
       stars.push(<li key={i} className={starClass}></li>);
     }
-  return (
-    
+  return (  
    <div className="rate">
         <ul>{stars}</ul>
       </div>
-
-        
-       
-      
-    
- 
   )};
 };
 
