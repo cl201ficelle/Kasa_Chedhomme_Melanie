@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import "../styles/page/Logement.css";
 import { useParams } from "react-router-dom";
 import Error from "./Error";

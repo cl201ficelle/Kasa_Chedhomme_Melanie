@@ -8,7 +8,6 @@
 .logement_carousel {
     position: relative;
   }
-  
 
 .logement_carousel .fa-chevron-left, .fa-chevron-right{
     color : white;
@@ -37,7 +36,7 @@
   .counter{
     position : absolute;
     color: white;
-    top : 90%;
+    top : 87%;
     left : 50%;
     right : 50%;
     font-size: 18px;

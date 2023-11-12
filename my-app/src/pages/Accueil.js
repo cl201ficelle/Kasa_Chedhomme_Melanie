@@ -4,9 +4,6 @@ import banner_image_accueil_mobile from "../Images/banner_image_accueil_mobile.p
 import Banner from "../components/Banner.js";
 import LogementsList from "../components/LogementsList";
 
-
-import "../styles/page/Accueil.css";
-
 function Accueil() {
   return (
     <main>
