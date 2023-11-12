@@ -1,15 +1,15 @@
-import "../styles/components/Location.css"
+import "../styles/components/Location.css";
 
 const LocationLogement = (props) => {
-  const location = props.location
+  const location = props.location;
   if (!location) {
-    return null
+    return null;
   } else
-  return (
-    <div className="titles">
-                          <h3 className="location">{props.location}</h3>
-                        </div>
-    )}
- 
+    return (
+      <div className="titles">
+        <h3 className="location">{props.location}</h3>
+      </div>
+    );
+};
 
 export default LocationLogement;

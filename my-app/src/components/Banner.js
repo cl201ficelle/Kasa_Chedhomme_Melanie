@@ -1,10 +1,11 @@
-import "../styles/components/Banner.css"
+import "../styles/components/Banner.css";
+
 function Banner(props) {
   return (
-            <div>
-            <img src={props.imgSrc} alt="Photo paysage"/>
-            </div>
-          )
+    <div>
+      <img src={props.imgSrc} alt="Photo paysage" />
+    </div>
+  );
 }
 
-export default Banner
+export default Banner;
