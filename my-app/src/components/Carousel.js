@@ -21,18 +21,24 @@ const Carousel = (props) => {
     setCurrentIndex(newIndex);
   };
   if (!pictures) {
-    return null
+    return <p>Pas encore de photo disponible</p>
   } else
   return (
     <div className="logement_carousel">
-      <div onClick={goToPrevious}><i className="fa-solid fa-chevron-left"></i></div>
-      <div onClick={goToNext}><i className="fa-solid fa-chevron-right"></i></div>
-      <div className="counter">1/1</div>
+      {pictures.length !== 1 && (
+          <div onClick={goToPrevious}><i className="fa-solid fa-chevron-left"></i></div>
+        )}
+        {pictures.length !== 1 && (
+          <div onClick={goToNext}><i className="fa-solid fa-chevron-right"></i></div>
+        )}
       {pictures.map((picture, index) => (
         <div key={index} className={`logement_imgs_carousel ${index === currentIndex ? 'active' : 'hidden'}`}>
           <img src={picture} alt={`photo logement ${index}`} className="logement_img_carousel"/>
         </div>
       ))}
+     {pictures.length !== 1 && (
+          <div className="counter">{currentIndex + 1}/{pictures.length}</div>
+        )}
   </div>
   );
 };
