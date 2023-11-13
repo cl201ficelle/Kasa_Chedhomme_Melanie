@@ -1,13 +1,13 @@
-.logement_imgs_carousel img{
+.logement_carousel_imgs img{
   width: 100%;
   height: 415px;
   object-fit: cover;
   border-radius: 10px;
 }
-.logement_carousel {
+.logement_carousel_container {
   position: relative;
 }
-.logement_carousel .fa-chevron-left, .fa-chevron-right{
+.logement_carousel_container .fa-chevron-left, .fa-chevron-right{
   color : white;
   position : absolute;
   top : 40%;
@@ -15,19 +15,19 @@
   z-index: 1;
   cursor: pointer;
 }
-.logement_carousel .fa-chevron-left{
+.logement_carousel_container .fa-chevron-left{
   left : 5% 
 }
-.logement_carousel .fa-chevron-right{
+.logement_carousel_container .fa-chevron-right{
   right : 5% 
 }
-.logement_imgs_carousel {
+.logement_carousel_imgs {
   display: none;
 }
-.logement_imgs_carousel.active {
+.logement_carousel_imgs.active {
   display: block;
 }
-.counter{
+.carousel_counter{
   position : absolute;
   color: white;
   top : 87%;
@@ -36,26 +36,26 @@
   font-size: 18px;
 }
 @media (max-width: 800px) {
-  .logement_imgs_carousel img{
+  .logement_carousel_imgs img{
       height: 360px;
  }
-  .logement_carousel .fa-chevron-left, .fa-chevron-right{
+  .logement_carousel_container .fa-chevron-left, .fa-chevron-right{
       font-size: 55px;
       top : 40%;
  }
-  .counter{
+  .carousel_counter{
       font-size: 14px;
  }
 }
 @media (max-width: 400px) {
-  .logement_imgs_carousel img{
+  .logement_carousel_imgs img{
       height: 255px;
  }
-  .logement_carousel .fa-chevron-left, .fa-chevron-right{
+  .logement_carousel_container .fa-chevron-left, .fa-chevron-right{
       font-size: 20px;
       top : 45%;
  }
-  .counter{
+  .carousel_counter{
       display: none;
  }
 }
