@@ -1,4 +1,4 @@
-import "../styles/page/Logement.scss";
+import "../styles/page/Logements.scss";
 import { useParams } from "react-router-dom";
 import Error from "./Error";
 import Collapsible from "../components/Collapse";
