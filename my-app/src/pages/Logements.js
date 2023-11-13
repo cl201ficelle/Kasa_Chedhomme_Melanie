@@ -1,14 +1,14 @@
-import "../styles/page/Logement.css";
+import "../styles/page/Logement.scss";
 import { useParams } from "react-router-dom";
 import Error from "./Error";
 import Collapsible from "../components/Collapse";
-import Tags from "../components/Tags";
-import Host from "../components/Host";
-import Carousel from "../components/Carousel";
-import TitleLogement from "../components/TitleLogement";
-import Rate from "../components/Rate";
+import Tags from "../components/LogementTags";
+import Host from "../components/LogementHost";
+import Carousel from "../components/LogementCarousel";
+import TitleLogement from "../components/LogementTitle";
+import Rate from "../components/LogementRate";
+import LocationLogement from "../components/LogementLocation";
 import logements from "../assets/logements.json";
-import LocationLogement from "../components/LocationLogement";
 
 const Location = () => {
   const { id } = useParams();

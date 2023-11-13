@@ -1,4 +1,4 @@
-import "../styles/components/TitleLogement.css";
+import "../styles/components/LogementTitle.scss";
 
 const TitleLogement = (props) => {
   const title = props.title;

@@ -1,14 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { createRoot } from "react-dom/client";
 import Accueil from "./pages/Accueil";
 import About from "./pages/About";
-
 import Header from "./components/Header";
 import Error from "./pages/Error";
 import Footer from "./components/Footer.js";
-import "../src/styles/page/index.css";
-import { createRoot } from "react-dom/client";
 import Location from "./pages/Logements";
+import "../src/styles/page/index.scss";
+
 
 const container = document.getElementById("root");
 const root = createRoot(container);

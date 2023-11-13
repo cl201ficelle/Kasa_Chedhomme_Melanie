@@ -1,4 +1,4 @@
-import "../styles/components/LogementsList.css";
+import "../styles/components/LogementsList.scss";
 import { Link } from "react-router-dom";
 
 const Card = (props) => {

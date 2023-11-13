@@ -1,0 +1,74 @@
+.logement_carousel_imgs img {
+  width: 100%;
+  height: 415px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.logement_carousel_container {
+  position: relative;
+
+  .fa-chevron-left, .fa-chevron-right {
+    color: white;
+    position: absolute;
+    top: 40%;
+    font-size: 80px;
+    z-index: 1;
+    cursor: pointer;
+
+    &.fa-chevron-left {
+      left: 5%;
+    }
+
+    &.fa-chevron-right {
+      right: 5%;
+    }
+  }
+
+  .carousel_counter {
+    position: absolute;
+    color: white;
+    top: 87%;
+    left: 50%;
+    right: 50%;
+    font-size: 18px;
+  }
+
+  .logement_carousel_imgs {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .logement_carousel_imgs img {
+      height: 360px;
+    }
+
+    .fa-chevron-left, .fa-chevron-right {
+      font-size: 55px;
+      top: 40%;
+    }
+
+    .carousel_counter {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .logement_carousel_imgs img {
+      height: 255px;
+    }
+
+    .fa-chevron-left, .fa-chevron-right {
+      font-size: 20px;
+      top: 45%;
+    }
+
+    .carousel_counter {
+      display: none;
+    }
+  }
+}

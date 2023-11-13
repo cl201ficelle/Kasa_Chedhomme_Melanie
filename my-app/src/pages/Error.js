@@ -1,4 +1,4 @@
-import "../styles/page/Error.css";
+import "../styles/page/Error.scss";
 import { Link } from "react-router-dom";
 
 function Error() {

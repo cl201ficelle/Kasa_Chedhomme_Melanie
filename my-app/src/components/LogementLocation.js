@@ -1,4 +1,4 @@
-import "../styles/components/LocationLogement.css";
+import "../styles/components/LogementLocation.scss";
 
 const LocationLogement = (props) => {
   const location = props.location;

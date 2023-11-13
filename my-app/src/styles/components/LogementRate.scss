@@ -1,0 +1,31 @@
+.logement_rate {
+    .fa-solid.fa-star.active {
+      color: #FF6060;
+      font-size: 22px;
+    }
+  
+    ul {
+      padding: 0;
+    }
+  
+    .fa-solid.fa-star.inactive {
+      color: gray;
+      font-size: 22px;
+    }
+  
+    li {
+      margin: 3.5px;
+    }
+  
+    @media (max-width: 800px) {
+      .fa-solid.fa-star.inactive, .fa-solid.fa-star.active {
+        font-size: 17px;
+      }
+    }
+  
+    @media (max-width: 400px) {
+      .fa-solid.fa-star.inactive, .fa-solid.fa-star.active {
+        font-size: 12px;
+      }
+    }
+  }

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import "../styles/page/Logement.css";
-import "../styles/components/Carousel.css";
+import "../styles/components/LogementCarousel.scss";
 
 const Carousel = (props) => {
   const pictures = props.pictures;

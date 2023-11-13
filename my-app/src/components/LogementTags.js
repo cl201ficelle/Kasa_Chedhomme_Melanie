@@ -1,4 +1,4 @@
-import "../styles/components/Tags.css";
+import "../styles/components/LogementTags.scss";
 
 const Tags = (props) => {
   const tags = props.tags;

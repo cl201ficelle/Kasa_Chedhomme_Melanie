@@ -1,0 +1,23 @@
+.banner_image_accueil, .banner_image_accueil_mobile, .banner_image_about {
+    img {
+      width: 100%;
+    }
+  }
+  
+  /* Media Queries */
+  
+  @media (max-width: 550px) {
+    .banner_image_accueil {
+      img {
+        display: none;
+      }
+    }
+  }
+  
+  @media (min-width: 550px) {
+    .banner_image_accueil_mobile {
+      img {
+        display: none;
+      }
+    }
+  }

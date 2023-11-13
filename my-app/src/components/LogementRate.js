@@ -1,4 +1,4 @@
-import "../styles/components/Rate.css";
+import "../styles/components/LogementRate.scss";
 
 const Rate = (props) => {
   const rating = props.rating;

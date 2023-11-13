@@ -1,5 +1,5 @@
 import Collapsible from "./Collapse";
-import "../styles/components/Collapse.css";
+import "../styles/components/Collapse.scss";
 
 function CollapseContentAbout() {
   const contentAbout = [
