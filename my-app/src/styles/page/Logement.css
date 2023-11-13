@@ -1,11 +1,9 @@
-
 .logement_info{
     display : flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 20px
+    gap: 20px 
 }
-
 .host_rating{
     display: flex;
     flex-direction: column;
@@ -13,17 +11,14 @@
     margin-top: 20px;
     align-items: flex-end;
 }
-
-
 @media (max-width: 400px) {
     .logement_info{
         flex-direction: column;
-        gap : 0
-        }
+        gap : 0 
+   }
     .host_rating{
         flex-direction: row-reverse;
         align-items: center;
         margin-top: 0;
-    }
-    
+   }
 }

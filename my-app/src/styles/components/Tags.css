@@ -8,29 +8,26 @@
     text-align: center;
     line-height: 26px;
     padding: 0 5px;
-    font-weight: 500
+    font-weight: 500 
 }
-
 .logement_list_tags{
     display: flex;
     flex-direction: row;
-    gap : 10px
+    gap : 10px 
 }
-
 @media (max-width: 800px) {
     .logement_tags{
-       font-size: 12px;
-       height: 21px;
-       line-height: 22px;
-       min-width: auto;
-    }   
+        font-size: 12px;
+        height: 21px;
+        line-height: 22px;
+        min-width: auto;
+   }
 }
-
 @media (max-width: 400px) {
     .logement_tags{
-       font-size: 10px;
-       height: 18px;
-       line-height: 20px;
-       min-width: auto;
-    }   
+        font-size: 10px;
+        height: 18px;
+        line-height: 20px;
+        min-width: auto;
+   }
 }

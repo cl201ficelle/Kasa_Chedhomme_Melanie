@@ -2,32 +2,26 @@
     color : #FF6060;
     text-align: center;
 }
-
 .error .number{
     font-size: 288px;
 }
-
 .error .error_text{
     font-size: 36px;
 }
-
 .retour a{
-    font-size: 18px;    
+    font-size: 18px;
 }
-
 .retour{
     padding: 100px 0;
 }
-
 @media (max-width: 550px) {
     .error .number{
         font-size: 96px;
-    }
+   }
     .error .error_text{
         font-size: 18px;
-    }
+   }
     .retour a{
-        font-size: 14px;     
-    }
-    
+        font-size: 14px;
+   }
 }

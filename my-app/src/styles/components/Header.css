@@ -3,49 +3,41 @@ Header .logo_nav{
     justify-content: space-between;
     align-items: center;
 }
-
 .logoKasa img{
     height: 70px;
 }
-
 nav a {
     color : #FF6060;
     text-decoration: none;
     font-size: 24px;
 }
-
 Header nav ul{
     display: flex;
     gap : 30px;
     justify-content: space-between;
     list-style-type: none;
- }
- 
+}
 header{
     max-width: 1240px;
     width: 100%;
     margin: 30px auto;
 }
-
-
 @media (max-width: 800px) {
     .logoKasa img{
         height: 50px !important;
-    }
+   }
     nav a {
         color : #FF6060;
         font-size: 16px;
+   }
 }
-}
-
 @media (max-width: 400px) {
     .logoKasa img{
         height: 40px !important;
-    }
+   }
     nav a {
         color : #FF6060;
         font-size: 12px;
         text-transform : uppercase;
-    }
+   }
 }
-

@@ -6,22 +6,19 @@
     background-color: #F6F6F6;
     border-radius: 25px;
     margin: 50px 0;
-    padding-top: 50px; 
-    padding-bottom: 20px;  
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
-
 .logement_img{
     height: 340px;
     width: 340px;
     object-fit: cover;
-    border-radius: 10px;    
+    border-radius: 10px;
 }
-
 .image_title_container{
     position: relative;
-    cursor: pointer;   
+    cursor: pointer;
 }
-
 .logement_title{
     position: absolute;
     bottom : 0;
@@ -30,11 +27,9 @@
     font-size: 18px;
     font-weight: 500;
 }
-
 .logement_card{
     margin-bottom: 30px;
 }
-
 .box_shadow{
     position: absolute;
     bottom: 4px;
@@ -43,26 +38,23 @@
     height: 100%;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
     border-radius: 10px;
-  }
-
-
-  @media (max-width: 800px) {
+}
+@media (max-width: 800px) {
     .box_shadow, .logement_img{
-       width: 335px; 
-       height: 300px;
-    }
+        width: 335px;
+        height: 300px;
+   }
     .logement_list{
         background-color: white;
-        padding-top: 0; 
+        padding-top: 0;
         padding-bottom: 0;
-    } 
+   }
 }
-
-  @media (max-width: 400px) {
+@media (max-width: 400px) {
     .box_shadow, .logement_img{
-       height: 255px;
-    }
+        height: 255px;
+   }
     .logement_title{
-       font-size: 16px;   
-    }
+        font-size: 16px;
+   }
 }

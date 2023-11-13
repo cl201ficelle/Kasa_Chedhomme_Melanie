@@ -6,27 +6,22 @@ footer{
     justify-content: center;
     gap : 40px;
     min-height: 209px;
-    max-height: 209px
- 
+    max-height: 209px 
 }
-
 .text_footer{
     color: white;
     font-size: 24px;
 }
-
 footer img{
     height: 40px;
 }
-
 @media (max-width: 800px) {
     .text_footer{
         font-size: 18px;
-    }  
+   }
 }
-
 @media (max-width: 400px) {
     .text_footer{
         font-size: 12px;
-    }    
+   }
 }

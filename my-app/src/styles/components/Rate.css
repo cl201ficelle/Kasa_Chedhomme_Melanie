@@ -2,27 +2,23 @@
     color : #FF6060;
     font-size: 22px;
 }
- .rate ul{
-        padding: 0;
-    }
+.rate ul{
+    padding: 0;
+}
 .rate .fa-solid.fa-star.inactive{
     color : gray;
     font-size: 22px;
 }
-
 .rate li{
     margin: 3.5px;
 }
-
 @media (max-width: 800px) {
     .rate .fa-solid.fa-star.inactive, .rate .fa-solid.fa-star.active{
-       font-size: 17px;
-    }
+        font-size: 17px;
+   }
 }
 @media (max-width: 400px) {
     .rate .fa-solid.fa-star.inactive, .rate .fa-solid.fa-star.active{
-       font-size: 12px;
-    }
-   
-    
+        font-size: 12px;
+   }
 }
