@@ -81,7 +81,7 @@
     .collapse_logement_container {
         flex-direction: column !important;
    }
-    .collapse_logement_container .description, .collapse_logement_container .equipements{
+    .collapse_logement_container .description_container, .collapse_logement_container .equipements_container{
         width: 100%;
    }
 }

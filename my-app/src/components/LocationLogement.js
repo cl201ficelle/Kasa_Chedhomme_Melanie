@@ -1,4 +1,4 @@
-import "../styles/components/Location.css";
+import "../styles/components/LocationLogement.css";
 
 const LocationLogement = (props) => {
   const location = props.location;
@@ -6,9 +6,7 @@ const LocationLogement = (props) => {
     return null;
   } else
     return (
-      <div className="titles">
-        <h3 className="location">{props.location}</h3>
-      </div>
+      <h3 className="logement_location">{props.location}</h3>
     );
 };
 

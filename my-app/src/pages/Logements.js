@@ -8,7 +8,7 @@ import Carousel from "../components/Carousel";
 import TitleLogement from "../components/TitleLogement";
 import Rate from "../components/Rate";
 import logements from "../assets/logements.json";
-import LocationLogement from "../components/Location";
+import LocationLogement from "../components/LocationLogement";
 
 const Location = () => {
   const { id } = useParams();
@@ -22,13 +22,13 @@ const Location = () => {
           <Carousel pictures={logement.pictures} />
           <div className="logement_info">
             <div className="titles_location_tags">
-              <div className="titles_location">
+              <div className="logement_title_and_location">
                 <TitleLogement title={logement.title} />
                 <LocationLogement location={logement.location} />
               </div>
               <Tags tags={logement.tags} />
             </div>
-            <div className="host_rating">
+            <div className="host_and_rating_container">
               <Host host={logement.host} />
               <Rate rating={logement.rating} />
             </div>

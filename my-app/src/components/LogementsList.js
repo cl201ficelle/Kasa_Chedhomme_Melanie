@@ -8,7 +8,7 @@ const Card = (props) => {
         <div key={index} className="logement_card">
           <Link to={`/Logements/${logement.id}`}>
             {" "}
-            <div className="image_title_container">
+            <div className="image_and_title_container">
               <div className="box_shadow"></div>
               <h2 className="logement_title">{logement.title}</h2>
               <img

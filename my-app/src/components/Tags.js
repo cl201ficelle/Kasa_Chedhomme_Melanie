@@ -6,11 +6,9 @@ const Tags = (props) => {
     return null;
   } else
     return (
-      <div className="logement_list_tags">
+      <div className="logement_tags_container">
         {tags.map((tag, index) => (
-          <div key={index} className="logement_tagss">
-            <h2 className="logement_tags">{tag}</h2>
-          </div>
+          <ul key={index} className="logement_tag">{tag}</ul>
         ))}
       </div>
     );

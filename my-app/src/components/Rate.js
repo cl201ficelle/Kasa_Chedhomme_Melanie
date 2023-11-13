@@ -14,7 +14,7 @@ const Rate = (props) => {
       stars.push(<li key={i} className={starClass}></li>);
     }
     return (
-      <div className="rate">
+      <div className="logement_rate">
         <ul>{stars}</ul>
       </div>
     );

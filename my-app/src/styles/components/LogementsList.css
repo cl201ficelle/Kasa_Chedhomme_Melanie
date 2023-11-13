@@ -15,7 +15,7 @@
     object-fit: cover;
     border-radius: 10px;
 }
-.image_title_container{
+.image_and_title_container{
     position: relative;
     cursor: pointer;
 }

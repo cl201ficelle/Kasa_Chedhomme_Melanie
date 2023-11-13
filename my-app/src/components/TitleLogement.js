@@ -1,4 +1,4 @@
-import "../styles/components/Title.css";
+import "../styles/components/TitleLogement.css";
 
 const TitleLogement = (props) => {
   const title = props.title;
@@ -6,9 +6,7 @@ const TitleLogement = (props) => {
     return null;
   } else
     return (
-      <div className="titles">
-        <h2 className="title">{props.title}</h2>
-      </div>
+      <h2 className="logement_title_page">{props.title}</h2>
     );
 };
 

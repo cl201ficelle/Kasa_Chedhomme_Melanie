@@ -1,24 +1,24 @@
-.rate .fa-solid.fa-star.active {
+.logement_rate .fa-solid.fa-star.active {
     color : #FF6060;
     font-size: 22px;
 }
-.rate ul{
+.logement_rate ul{
     padding: 0;
 }
-.rate .fa-solid.fa-star.inactive{
+.logement_rate .fa-solid.fa-star.inactive{
     color : gray;
     font-size: 22px;
 }
-.rate li{
+.logement_rate li{
     margin: 3.5px;
 }
 @media (max-width: 800px) {
-    .rate .fa-solid.fa-star.inactive, .rate .fa-solid.fa-star.active{
+    .logement_rate .fa-solid.fa-star.inactive, .logement_rate .fa-solid.fa-star.active{
         font-size: 17px;
    }
 }
 @media (max-width: 400px) {
-    .rate .fa-solid.fa-star.inactive, .rate .fa-solid.fa-star.active{
+    .logement_rate .fa-solid.fa-star.inactive, .logement_rate .fa-solid.fa-star.active{
         font-size: 12px;
    }
 }
