@@ -9,8 +9,8 @@ const Collapsible = (props) => {
   };
 
   return (
-    <div className="button_text_collapse">
-      <button className="button_collapse" onClick={toggle}>
+    <div className="btn_and_text_collapse">
+      <button className="btn_collapse" onClick={toggle}>
         {props.label}
         <i
           className={`fa-solid fa-chevron-up ${open ? "rotated" : ""}`}
@@ -18,7 +18,7 @@ const Collapsible = (props) => {
         ></i>
       </button>
       <div
-        className="content-parent"
+        className="collapse_content_parent"
         ref={contentRef}
         style={
           open
@@ -26,7 +26,7 @@ const Collapsible = (props) => {
             : { height: "0px" }
         }
       >
-        <div className="collapse_content">{props.description}</div>
+        <div className="collapse_content_text">{props.description}</div>
       </div>
     </div>
   );

@@ -34,14 +34,14 @@ const Location = () => {
             </div>
           </div>
           <div>
-            <div className="collapse_logement">
-              <div className="description">
+            <div className="collapse_logement_container">
+              <div className="description_container">
                 <Collapsible
                   label="Description"
                   description={logement.description}
                 />
               </div>
-              <div className="equipements">
+              <div className="equipements_container">
                 <Collapsible
                   label="Équipements"
                   description={logement.equipments.map((e, index) => (
