@@ -48,6 +48,7 @@
     @media (max-width: 800px) {
       .box_shadow, .logement_img {
         height: 300px;
+        width: 100%;
       }
   
       .logement_list {
@@ -58,6 +59,11 @@
     }
   
     @media (max-width: 400px) {
+      .logement_list {
+        display: flex;
+        flex-direction: column;
+      }
+
       .box_shadow, .logement_img {
         height: 255px;
       }

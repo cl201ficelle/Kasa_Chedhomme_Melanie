@@ -10,6 +10,7 @@
     align-items: center;
     padding: 0 20px;
     width: 100%;
+    cursor: pointer;
   
     @media (max-width: 800px) {
       font-size: 18px;
@@ -67,7 +68,8 @@
     .btn_and_text_collapse {
       display: flex;
       flex-direction: column;
-      margin: 40px;
+      max-width: 1023px;
+      margin: 40px auto;
   
       @media (max-width: 800px) {
         margin: 30px 30px;
