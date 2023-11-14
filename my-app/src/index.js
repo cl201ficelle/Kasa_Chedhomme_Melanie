@@ -9,7 +9,6 @@ import Footer from "./components/Footer.js";
 import Location from "./pages/Logements";
 import "../src/styles/page/index.scss";
 
-
 const container = document.getElementById("root");
 const root = createRoot(container);
 
