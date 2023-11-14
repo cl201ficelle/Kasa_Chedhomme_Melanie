@@ -10,7 +10,7 @@ const Host = (props) => {
       <div className="host_container">
         <h2 className="host_name">{host.name}</h2>
         <div className="host_picture">
-          <img src={host.picture} />
+          <img src={host.picture} alt="Portrait du propriétaire"/>
         </div>
       </div>
     );

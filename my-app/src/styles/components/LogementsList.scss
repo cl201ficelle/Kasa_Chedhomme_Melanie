@@ -8,6 +8,7 @@
     margin: 50px 0;
     padding-top: 50px;
     padding-bottom: 20px;
+}
   
     .logement_img {
       height: 340px;
@@ -46,12 +47,11 @@
   
     @media (max-width: 800px) {
       .box_shadow, .logement_img {
-        width: 335px;
         height: 300px;
       }
   
       .logement_list {
-        background-color: white;
+        background-color: white !important;
         padding-top: 0;
         padding-bottom: 0;
       }
@@ -66,4 +66,3 @@
         font-size: 16px;
       }
     }
-  }
