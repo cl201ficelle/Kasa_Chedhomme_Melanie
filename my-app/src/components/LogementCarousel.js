@@ -21,12 +21,12 @@ const Carousel = (props) => {
   } else
     return (
       <div className="logement_carousel_container">
-        {pictures.length !== 1 && (
+        {pictures.length > 1 && (
           <div onClick={goToPrevious}>
             <i className="fa-solid fa-chevron-left"></i>
           </div>
         )}
-        {pictures.length !== 1 && (
+        {pictures.length > 1 && (
           <div onClick={goToNext}>
             <i className="fa-solid fa-chevron-right"></i>
           </div>
@@ -45,7 +45,7 @@ const Carousel = (props) => {
             />
           </div>
         ))}
-        {pictures.length !== 1 && (
+        {pictures.length > 1 && (
           <div className="carousel_counter">
             {currentIndex + 1}/{pictures.length}
           </div>
