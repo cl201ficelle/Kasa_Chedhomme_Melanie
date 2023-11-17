@@ -2,9 +2,6 @@ import "../styles/components/LogementTags.scss";
 
 const Tags = (props) => {
   const tags = props.tags;
-  if (!tags) {
-    return null;
-  } else
     return (
       <div className="logement_tags_container">
         {tags.map((tag, index) => (
