@@ -42,21 +42,6 @@
     }
   }
 
-  @media (max-width: 800px) {
-    .logement_carousel_imgs img {
-      height: 360px;
-    }
-
-    .fa-chevron-left, .fa-chevron-right {
-      font-size: 55px;
-      top: 40%;
-    }
-
-    .carousel_counter {
-      font-size: 14px;
-    }
-  }
-
   @media (max-width: 400px) {
     .logement_carousel_imgs img {
       height: 255px;
