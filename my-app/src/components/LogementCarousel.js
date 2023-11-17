@@ -40,7 +40,7 @@ const Carousel = (props) => {
           >
             <img
               src={picture}
-              alt={`photo logement ${index}`}
+              alt={`logement ${index}`}
               className="logement_img_carousel"
             />
           </div>
