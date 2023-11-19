@@ -5,36 +5,35 @@
   font-weight: 500;
 }
 
+// #root {
+//   display: flex;
+//   flex-direction: column;
+//   min-height: 100%; 
+// }
+
 main {
+  flex-grow: 1;
   max-width: 1240px;
+  margin: auto;
 }
 
 body {
   margin: 0;
 }
 
-html, body, #root {
+ html, body, #root {
   height: 100%;
 }
-
-#root {
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex-grow: 1;
-  margin: auto;
-}
-
+  
 @media (max-width: 1280px) {
-  body {
-    margin: 0 20px;
-  }
-
-  footer {
-    width: 100vw;
-    margin-left: calc(-1 * ((100vw - 100%) / 2));
+  main, .logo_nav{
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
- 
+
+
+
+
+
+
